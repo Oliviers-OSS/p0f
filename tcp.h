@@ -2,6 +2,7 @@
 
 #ifdef _SUN_
 typedef     unsigned char u_int8_t;
+typedef     unsigned int u_int32_t;
 #endif
 
 #define	TCPOPT_EOL		0
