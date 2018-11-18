@@ -1,11 +1,14 @@
 # http://www.gnu.org/software/automake
 
 Makefile.in
+Makefile
 /ar-lib
 /mdate-sh
 /py-compile
 /test-driver
 /ylwrap
+.deps
+*.o
 
 # http://www.gnu.org/software/autoconf
 
@@ -17,6 +20,8 @@ Makefile.in
 /config.guess
 /config.h.in
 /config.sub
+/config.log
+/config.status
 /configure
 /configure.scan
 /depcomp
