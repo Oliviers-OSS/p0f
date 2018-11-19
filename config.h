@@ -13,6 +13,11 @@
 
 #include "types.h"
 
+#ifndef TO_STRING
+#define STRING(x) #x
+#define TO_STRING(x) STRING(x)
+#endif /* STRING */
+
 /********************************************
  * Things you may reasonably want to change *
  ********************************************/
@@ -20,7 +25,7 @@
 /* Default location of p0f.fp: */
 
 #ifndef FP_FILE
-#  define FP_FILE           "p0f.fp"
+#  define FP_FILE           TO_STRING(CONFIGDIR) "/p0f.fp"
 #endif /* !FP_FILE */
 
 /* Initial permissions on log files: */
